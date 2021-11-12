@@ -1,0 +1,59 @@
+.instructions {
+    border: 1px solid darken($off-white,10%);
+    border-radius: 5px;
+    margin-top :$lg;
+    margin-bottom: $lg;
+    padding: $xmd $lg;
+
+    h1{
+        color: $off-black;
+        font-size: $md;
+        text-align: center;
+        animation-name: focus-in-contract;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+    }
+    @keyframes focus-in-contract {
+        0%{
+          letter-spacing: 1em;
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100%{
+          filter: blur(0);
+          opacity: 1;
+        }
+      }
+
+    .lifeline{
+        position: relative;
+        top: -3px;
+    }
+
+    .lifeline-icon{
+        color: $light-green;
+        cursor: pointer;
+    }
+
+    .browser-default {
+        padding-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    img{
+        width: 80%;
+        height: 50%;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .instructions img {
+        width: 100% !important;
+        height: 150% !important;
+    }
+}

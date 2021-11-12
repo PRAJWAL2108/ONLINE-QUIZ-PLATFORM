@@ -1,0 +1,143 @@
+#home {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 212.5vh;
+
+    section {
+       background-color: rgba(200,200,200,0.7);
+       border-radius: 5px;
+       padding-left: $md;
+       padding-right: $md;
+       height: 80%;
+       width: 35%;
+    }
+
+    .cube{
+        font-size: 8rem;
+        color: $black;
+    }
+
+    h1{
+        font-size: $lg;
+        font-weight: 500;
+        text-align: center;
+        color: $blue;
+    }
+
+    div.at-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .at-item{
+        animation-name: focus-in-contract;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+    }
+    @keyframes focus-in-contract {
+        0%{
+          letter-spacing: 1em;
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100%{
+          filter: blur(0);
+          opacity: 1;
+        }
+      }
+
+    .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+      }
+
+    div.play-bottom-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    a.play-button{
+        background-color: $green;
+        border-radius: $button-radius;
+        color: #fff;
+        animation-name: text-shadow-drop;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        text-align: center;
+        transition: 0.3s linear all;
+        
+    }
+    @keyframes text-shadow-drop {
+        0%{
+          text-shadow: 0 0 0 transparent;
+        }
+        100%{
+          text-shadow: -6px 6px 18px rgba(0,0,0,.35);
+        }
+      }
+
+    a.play-button:hover {
+        background-color: darken($black, 10%); 
+        box-shadow: $shadow;
+    }
+
+    .auth-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: $lg;
+    }
+
+    #login-button{
+        background-color: $teal;
+    }
+
+    #login-button:hover {
+        background-color: darken($teal, 5%);
+        box-shadow: $shadow;
+    }
+    
+    #signup-button{
+        background-color: $pink;
+    }
+
+    #signup-button:hover{
+        background-color: darken($pink, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container .auth-buttons{
+        color: #fff;
+        cursor: pointer;
+        border-radius: $button-radius;
+        padding: $normal 0;
+        text-align: center;
+        transition: 0.3s linear all;
+        width: 45%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #home section {
+        padding: 0 $normal;
+        width: 100%;
+        height:100%;
+    }
+}

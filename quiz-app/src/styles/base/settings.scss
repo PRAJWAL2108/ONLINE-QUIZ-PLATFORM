@@ -1,0 +1,42 @@
+// colors
+$white: #EFEFEF;
+$black: #000000;
+$blue: #150485;
+$red: red;
+$orange: orange;
+$error-text: #F44336;
+$success-text: #4caf50;
+$light-blue: #5C7AEA;
+$navy-blue: #2C2891;
+$green: #343434;
+$light-green: #17D7A0; 
+$teal: #055E68;
+$pink: #B52B65;
+$off-white: #f8f8f8;
+$off-black: #333;
+$yellow: #FAFF00;
+
+// Sizes
+$xs: 0.5rem; //extra-small  $xs
+$normal: 1rem; //normal $normal
+$xmd: 1.5rem;    //extra-medium $sm
+$md: 2rem;      //medium    $md
+$lg: 3rem;  //large $lg
+$xlg: 5rem; //extra-large   $xlg
+$xxlg: 7rem;    //extra-extra-large $xxlg
+
+
+// Button Radius
+$button-radius: 30px;
+
+// Fonts
+$ubuntu: 'Ubuntu', sans-serif;
+
+// Break Points
+$lg-breakpoint: 1024px;
+$md-breakpoint: 768px;
+$sm-breakpoint: 641px;
+$xs-breakpoint: 480px;
+
+// Shadow
+$shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12) 0 1px 5px 0 rgba(0,0,0,0.2);
